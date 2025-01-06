@@ -1,0 +1,137 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: black;
+    color: aliceblue;
+
+
+}
+
+main {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+header {
+    padding: 10px 20px;
+    display: flex;
+    justify-content:space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  header nav ul {
+    margin: 0;
+    padding-right: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  header nav ul li {
+    padding: 10px 20px;
+  }
+  
+  header nav ul li a {
+    
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+
+  #logo {
+    height: 60px;
+    font-size: 22pt;
+    color: white;
+    background: linear-gradient(to right, rgb(255, 255, 255),  rgb(255, 255, 255)); /* Apply gradient colors */
+            -webkit-background-clip: text;  /* Clip background to text */
+            color: transparent;   /*Make text color transparent so gradient shows */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    }
+  
+
+  
+  header.scrolled {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-family: Playwrite AU SA, serif;
+    
+  }
+
+
+form {
+    width: fit-content;
+}
+
+#text-input {
+    width: 400px;
+    height: 30px;
+    background-color: black;
+    border: 2px solid transparent;  /* Make the border transparent */
+    border-radius: 5px;  /* Optional: Adds rounded corners */
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(to right,  rgb(149, 67, 216), rgb(75, 92, 224), rgb(50, 154, 203));  /* Two gradients */
+    background-origin: border-box;  /* Ensures the gradient is drawn along the border */
+    background-clip: content-box, border-box;  /* Clips the background correctly */
+    color: white;
+    font-size: 16pt;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.515);
+    
+
+}
+
+#text-input:focus {
+    outline: none;
+}
+
+#submit-button {
+    height: 36px;
+    width: 50px;
+    font-size: 16pt;
+
+    border-radius: 8px;
+    border: 2px solid white;
+    background: linear-gradient(to right, rgb(255, 255, 255),  rgb(255, 255, 255)); /* Apply gradient colors */
+            -webkit-background-clip: text;  /* Clip background to text */
+            color: transparent;   /*Make text color transparent so gradient shows */
+   
+    margin-left: 5px;
+}
+
+#submit-button:hover {
+    background: linear-gradient(to right, rgb(255, 252, 68),  rgb(255, 252, 68)); /* Apply gradient colors */
+            -webkit-background-clip: text;  /* Clip background to text */
+            color: transparent;
+    
+}
+
+#sum-container {
+    width: 70%;
+    font-size: 18pt;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-size: 12pt;
+}
+
+#link {
+    text-decoration: none;
+    color: white;
+}
