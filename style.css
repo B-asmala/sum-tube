@@ -51,8 +51,9 @@ header {
     font-size: 22pt;
     color: white;
     background: linear-gradient(to right, rgb(255, 255, 255),  rgb(255, 255, 255)); /* Apply gradient colors */
-            -webkit-background-clip: text;  /* Clip background to text */
-            color: transparent;   /*Make text color transparent so gradient shows */
+    -webkit-background-clip: text;  /* Clip background to text */
+    background-clip: text;
+    color: transparent;   /*Make text color transparent so gradient shows */
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     }
@@ -101,16 +102,18 @@ form {
     border-radius: 8px;
     border: 2px solid white;
     background: linear-gradient(to right, rgb(255, 255, 255),  rgb(255, 255, 255)); /* Apply gradient colors */
-            -webkit-background-clip: text;  /* Clip background to text */
-            color: transparent;   /*Make text color transparent so gradient shows */
+    -webkit-background-clip: text;  /* Clip background to text */
+    background-clip: text;
+    color: transparent;   /*Make text color transparent so gradient shows */
    
     margin-left: 5px;
 }
 
 #submit-button:hover {
     background: linear-gradient(to right, rgb(255, 252, 68),  rgb(255, 252, 68)); /* Apply gradient colors */
-            -webkit-background-clip: text;  /* Clip background to text */
-            color: transparent;
+    -webkit-background-clip: text;  /* Clip background to text */
+    background-clip: text;
+    color: transparent;
     
 }
 
@@ -134,4 +137,9 @@ footer {
 #link {
     text-decoration: none;
     color: white;
+}
+
+/* CSS to hide the element */
+.hidden {
+  display: none;
 }
