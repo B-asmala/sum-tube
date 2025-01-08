@@ -5,13 +5,19 @@ const apiURL = 'http://127.0.0.1:3000/';
 checkAwake();
 
 async function checkAwake (){
-    const wakeUpResponse = await (await fetch(apiURL + 'wake')).json();
+    try{
+        const wakeUpResponse = await (await fetch(apiURL + 'wake')).json();
 
-    if(wakeUpResponse.message == 'awake'){//server woke up, change ui to accept input
-        changeUI();
-    }else{
-        alert("problem with server, try again later");
+        if(wakeUpResponse.message == 'awake'){//server woke up, change ui to accept input
+            changeUI();
+        }else{
+            throw new Error('Couldn\'t wake server');
+        }
+    }catch(err){
+        console.log(err);
+        alert("Error with server, try again later");
     }
+    
 }
 
 
