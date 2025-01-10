@@ -31,7 +31,19 @@ document.getElementById('form').onsubmit = async (event) => {
 
             //make API call
             const subs = await (await fetch(apiURL + 'sum/' + URL)).json();
+            
+
+            //direction
+            if(subs.language == 'en'){
+                div.classList.remove('rtl');
+                div.classList.add('ltr');
+            }else{
+                div.classList.remove('ltr');
+                div.classList.add('rtl');
+            }
+
             //display in div
+            //TODO: cool writing animation
             div.innerHTML = subs.data;
         }else{//invalid input
 
