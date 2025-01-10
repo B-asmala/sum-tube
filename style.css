@@ -58,7 +58,9 @@ header {
     font-weight: bolder;
     }
   
-
+  #navbar {
+    background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+  }
   
   header.scrolled {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -94,7 +96,7 @@ form {
 
 .red-border {
   border: 2px solid red;
-  
+
 }
 
 #text-input:focus {
@@ -149,4 +151,12 @@ footer {
 /* CSS to hide the element */
 .hidden {
   display: none;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
 }
